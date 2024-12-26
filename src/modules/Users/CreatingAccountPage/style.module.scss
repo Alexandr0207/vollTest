@@ -1,0 +1,241 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  height: calc(100% - 40px);
+
+  .leftPart {
+    background-image: url("../../../assets/logoFull.jpg");
+    background-position: right;
+    width: 795px;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .rightPart {
+    padding: 18px 125px;
+    position: relative;
+    width: 870px;
+
+    .locale {
+      position: absolute;
+      right: 0;
+      top: 0;
+      cursor: pointer;
+      width: 40px;
+    }
+
+    .title {
+      margin-top: 55px;
+      font-size: 36px;
+      color: var(--white);
+      font-weight: 700;
+      line-height: 30.99px;
+      letter-spacing: 1.03px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      margin-bottom: 10px;
+
+      & > span {
+        color: var(--red-primary);
+        line-height: 31px;
+      }
+    }
+
+    .description {
+      color: var(--title-primary);
+      font-size: 10.87px;
+      font-weight: 400;
+      line-height: 13.05px;
+      letter-spacing: 0.43px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      margin-bottom: 45px;
+
+      & > span {
+        color: var(--red-primary);
+        cursor: pointer;
+      }
+    }
+
+    .inputAddon {
+      width: 18px;
+    }
+
+    .resend {
+      width: 108px;
+      height: 26px;
+      font-size: 13px;
+      background: var(--resend-background-color);
+      font-weight: 400;
+      line-height: 11.42px;
+      letter-spacing: 0.38px;
+      text-align: center;
+      color: var(--resend-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      border-radius: 1px;
+    }
+
+    .emailContainer {
+      margin-bottom: 19px;
+    }
+
+    .approves {
+      display: flex;
+      align-items: center;
+      height: 32px;
+
+      input[type="checkbox"] {
+        appearance: none;
+        width: 15px;
+        border: none;
+        outline: none;
+        border-radius: 1px;
+        padding: 0;
+        height: 15px;
+        margin: 0;
+        accent-color: var(--white);
+        background-color: var(--title-primary);
+        box-sizing: border-box;
+        margin-right: 12px;
+      }
+
+      input[type="checkbox"]:checked {
+        appearance: auto;
+      }
+
+      .descriptionApproves {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 23px;
+        letter-spacing: 0.10px;
+        text-align: left;
+        color: var(--description-color);
+        margin-bottom: 2px;
+
+        .link {
+          color: var(--description-link-color);
+          cursor: pointer;
+        }
+      }
+    }
+
+    .submitBtn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 48px;
+      width: 100%;
+      background: var(--red-primary);
+      color: var(--white);
+      font-size: 19px;
+      font-weight: 700;
+      line-height: 16.31px;
+      letter-spacing: 0.54px;
+      text-align: center;
+      border: none;
+      outline: none;
+      margin-top: 14px;
+      margin-bottom: 40px;
+      border-radius: 1px;
+      cursor: pointer;
+    }
+
+    .footerPart {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+
+      .linkPart {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 13.05px;
+        letter-spacing: 0.44px;
+        color: var(--title-primary);
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+
+        img {
+          margin-right: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1367px) {
+  .container {
+
+    .leftPart {
+      background-image: url("../../../assets/logo.jpg");
+      background-position: right;
+      width: 565px;
+      height: 100%;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    .rightPart {
+      width: 620px;
+      padding: 18px 90px;
+
+      .locale {
+        width: 30px;
+      }
+
+      .title {
+        font-size: 26px;
+        margin-bottom: 7px;
+      }
+
+      .resend {
+        width: 76px;
+        height: 18px;
+        font-size: 9.51px;
+      }
+
+      .emailContainer {
+        margin-bottom: 14px;
+      }
+
+      .approves {
+        display: flex;
+        align-items: center;
+        height: 23px;
+
+        input[type="checkbox"] {
+          width: 11px;
+          height: 11px;
+
+        }
+
+        .descriptionApproves {
+          font-size: 10.87px;
+          margin-bottom: 2px;
+        }
+      }
+
+      .submitBtn {
+        height: 34px;
+        font-size: 13.59px;
+      }
+
+      .footerPart {
+        .linkPart {
+          font-size: 10.87px;
+        }
+      }
+
+      .inputAddon {
+        width: 15px;
+      }
+    }
+  }
+}

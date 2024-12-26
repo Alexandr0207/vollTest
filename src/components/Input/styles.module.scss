@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--background-input-color);
+  height: 47px;
+  padding-right: 23px;
+
+  input {
+    background: transparent;
+    outline: none;
+    border: none;
+    color: var(--white);
+    padding-left: 15px;
+  }
+
+  .addonsContainer {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 1367px) {
+  .container {
+    height: 33px;
+  }
+}
